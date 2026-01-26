@@ -1,0 +1,14 @@
+# Framework RAG
+llama-index>=0.10.0
+llama-index-llms-ollama>=0.1.0
+llama-index-embeddings-huggingface>=0.1.0
+
+# Interface utilisateur
+streamlit>=1.30.0
+
+# Dépendances pour les embeddings HuggingFace
+sentence-transformers>=2.2.0
+torch>=2.0.0
+
+# Utilitaires
+tqdm>=4.65.0

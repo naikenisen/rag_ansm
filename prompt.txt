@@ -1,0 +1,20 @@
+Agis en tant qu'expert Python spécialisé en IA locale. Je souhaite créer une application Web locale de RAG (Retrieval-Augmented Generation) optimisée pour le CPU.
+
+**Configuration cible :**
+1. Framework RAG : LlamaIndex (v0.10+).
+2. Interface Utilisateur : Streamlit.
+3. LLM : gemma3:4b (via Ollama).
+4. Embedding : "BAAI/bge-small-en-v1.5" (via HuggingFaceEmbedding) pour économiser le CPU.
+5. Chemin des documents : /base_documentaire (fichiers .txt).
+
+**Fonctionnalités attendues dans le code :**
+- Utilise le décorateur `@st.cache_resource` pour ne charger l'index et les modèles qu'une seule fois au démarrage de l'app.
+- Affiche une zone de chat (style ChatGPT) avec `st.chat_input` et `st.chat_message`.
+- Ajoute un bouton dans une barre latérale (sidebar) pour "Réindexer les documents" si j'ajoute de nouveaux fichiers dans le dossier.
+- Le moteur de recherche doit limiter la réponse aux informations présentes dans les documents (système de prompt strict).
+- Affiche un message d'attente (spinner) pendant que le modèle génère la réponse.
+
+**Sortie attendue :**
+- Le script Python complet (ex: app.py).
+- La liste des commandes pip (streamlit, llama-index, llama-index-llms-ollama, llama-index-embeddings-huggingface).
+- La commande exacte pour lancer l'application (streamlit run app.py).

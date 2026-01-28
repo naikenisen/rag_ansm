@@ -2,6 +2,9 @@
 
 ## précautions d'utilisation
 Attention ce logiciel est expérimental et ne doit pas être utilisé à des fins médicales.
+Ce logiciel n'est pas certifié et n'a pas été validé par des professionnels de santé.
+Il est destiné à des fins de recherche et d'expérimentation uniquement.
+Il n'a pas la certification DM.
 
 ## Voici un exemple d'utilisation de ce RAG : 
 
